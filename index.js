@@ -38,8 +38,8 @@ const questions = [
     {
         type:"list",
         name:"license",
-        message:"What license is your project using?",
-        choices: ["Apache License 2.0", "GNU General Public License v3.0", "MIT License"]      
+        message:"Which license is your project using?",
+        choices: ["Apache License 2.0", "GNU General Public License v3.0", "MIT License", "None"]      
     },
     {
         type:"input",
@@ -75,3 +75,5 @@ function init() {
 
 // Function call to initialize app
 init();
+
+
