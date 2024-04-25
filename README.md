@@ -1,8 +1,8 @@
-# Title of my project
+# Title
   ## Description
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-  A description of my project
+  Description
 
   ## Table of Contents
 
@@ -16,15 +16,15 @@
 
   ## Installation
 
-  Instructions for installation
+  Instructions
 
   ## Usage
 
-  Information for proper usage
+  Usage
 
   ## Credits
 
-  Credit for collaaborators
+  Credits
 
   ## License
 
@@ -35,11 +35,11 @@
 
   ## Contributing
 
-  Guidelines for contributing
+  Contributing
 
   ## Tests
 
-  Ways to test
+  Tests
 
   ## Questions
 

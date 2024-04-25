@@ -1,40 +1,40 @@
-// TODO: Include packages needed for this application
+// Connects to fs and inquirer modules, and the attached generateMarkdown js
 const fs = require('fs');
 const inquirer = require('inquirer');
 const generateMarkdown = require('./utils/generateMarkdown');
-const { type } = require('os');
 
-// TODO: Create an array of questions for user input
+// Questions that will prompt the message or list of choices
+// I included a default answer to make it easy to go through the prompts for testing purposes
 const questions = [
     {
         type:"input",
         name:"title",
         message:"What is the title of your project?",
-        // default:"Title",
+        default:"Title",
     },
     {
         type:"input",
         name:"description",
         message:"What is a description of your project?",
-        // default:"Description",
+        default:"Description",
     },
     {
         type:"input",
         name:"installation",
         message:"What instructions are needed for installation?",
-        // default:"Instructions",
+        default:"Instructions",
     },
     {
         type:"input",
         name:"usage",
         message:"What information is needed for proper usage?",
-        // default:"Usage",
+        default:"Usage",
     },
     {
         type:"input",
         name:"credits",
         message:"Would you like to credit any collaborators who aided with your project?",
-        // default:"Credits",
+        default:"Credits",
     },
     {
         type:"list",
@@ -46,13 +46,13 @@ const questions = [
         type:"input",
         name:"contributing",
         message:"What are the guidelines for contributing to the project?",
-        // default:"Contributing",
+        default:"Contributing",
     },
     {
         type:"input",
         name:"test",
         message:"How can the project be tested?",
-        // default:"Tests"
+        default:"Tests"
     },
     {
         type:"input",
@@ -68,20 +68,20 @@ const questions = [
     },
 ];
 
-// TODO: Create a function to write README file
+// Takes the big string and puts it into a file of the designated type
 function writeToFile(fileName, string) {
     fs.writeFile(fileName, string, (err)=>{
         if(err) throw err;
     })
 }
 
-// TODO: Create a function to initialize app
+// Displays the questions as prompts in the command line
 function init() {
     inquirer.prompt(questions).then((answers)=>{
-        // pass the answers to the big string
+        // Passes the answers to the big string
         const string = generateMarkdown(answers);
         console.log(answers);
-        
+        // Sends the big string to the function to write the file
         writeToFile("readme.md", string)
     })
 }
