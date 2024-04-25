@@ -1,8 +1,8 @@
-# README Generator
+# Title of my project
   ## Description
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-  This is a command line application that assists the user in creating a professional README file for their projects. Using the npm Inquirer module, the user will be prompted with a series of questions relating to various sections of the README. These questions will include a title, description, installation instructions, license, and GitHub username. After all the prompts are answered, a new README.md file will be created with the inputted data displayed in the appropriate sections.
+  A description of my project
 
   ## Table of Contents
 
@@ -16,15 +16,15 @@
 
   ## Installation
 
-  To install, clone repo to user's local files.
+  Instructions for installation
 
   ## Usage
 
-  Once repo is in local files, invoke node index.js in the command line, then respond to the prompts.
+  Information for proper usage
 
   ## Credits
 
-  I would like to thank my classmates and TAs in the UCF Bootcamp for their advice and access to resources. License badges and urls were borrowed from https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba
+  Credit for collaaborators
 
   ## License
 
@@ -35,11 +35,11 @@
 
   ## Contributing
 
-  If you would like to make any contributions, please make any changes in a branch and submit a pull request with detailed comments.
+  Guidelines for contributing
 
   ## Tests
 
-  To test, re-invoke node index.js command and go back through the prompts, choosing different answers. The README.md will be updated with new responses. 
+  Ways to test
 
   ## Questions
 

@@ -10,31 +10,31 @@ const questions = [
         type:"input",
         name:"title",
         message:"What is the title of your project?",
-        default:"Title",
+        // default:"Title",
     },
     {
         type:"input",
         name:"description",
         message:"What is a description of your project?",
-        default:"Description",
+        // default:"Description",
     },
     {
         type:"input",
         name:"installation",
         message:"What instructions are needed for installation?",
-        default:"Instructions",
+        // default:"Instructions",
     },
     {
         type:"input",
         name:"usage",
         message:"What information is needed for proper usage?",
-        default:"Usage",
+        // default:"Usage",
     },
     {
         type:"input",
         name:"credits",
         message:"Would you like to credit any collaborators who aided with your project?",
-        default:"Credits",
+        // default:"Credits",
     },
     {
         type:"list",
@@ -46,13 +46,13 @@ const questions = [
         type:"input",
         name:"contributing",
         message:"What are the guidelines for contributing to the project?",
-        default:"Contributing",
+        // default:"Contributing",
     },
     {
         type:"input",
         name:"test",
         message:"How can the project be tested?",
-        default:"Tests"
+        // default:"Tests"
     },
     {
         type:"input",
