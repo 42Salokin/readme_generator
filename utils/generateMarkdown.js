@@ -47,7 +47,6 @@ function renderLicenseLink(license) {
 function renderLicenseSection(license) {
   if (license !== "None") {
     return `
-  ${renderLicenseBadge(license)}\n
   This project is licensed under the ${license}.\n
   ${renderLicenseLink(license)}`
   } else {
@@ -60,6 +59,7 @@ function renderLicenseSection(license) {
 function generateMarkdown(data) {
   return `# ${data.title}
   ## Description
+  ${renderLicenseBadge(data.license)}
 
   ${data.description}
 
@@ -69,8 +69,9 @@ function generateMarkdown(data) {
   * [Usage](#usage)
   * [Credits](#credits)
   * [License](#license)
-  * [Contributions](#contributions)
+  * [Contributing](#contributing)
   * [Tests](#tests)
+  * [Questions](#questions)
 
   ## Installation
 
@@ -88,13 +89,19 @@ function generateMarkdown(data) {
 
   ${renderLicenseSection(data.license)}
 
-  ## Contributions
+  ## Contributing
 
-  ${data.contribution}
+  ${data.contributing}
 
   ## Tests
 
   ${data.test}
+
+  ## Questions
+
+  For more information, see my [GitHub](https://github.com/${data.github})
+
+  Send any questions or comments to ${data.email}
 `;
 }
 
